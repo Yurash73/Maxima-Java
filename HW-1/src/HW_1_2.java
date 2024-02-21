@@ -4,10 +4,10 @@ public class HW_1_2 {
         int totalCan = 120;
         int whiteColorCan = 2;
         int brownColorCan = 4;
-        int totalWhiteColorCan;
-        int totalBrownColorCan;
+        double totalWhiteColorCan;
+        double totalBrownColorCan;
 
-        int classes = totalCan / (whiteColorCan + brownColorCan);
+        double classes = totalCan / (whiteColorCan + brownColorCan);
         totalBrownColorCan = classes * brownColorCan;
         totalWhiteColorCan = classes * whiteColorCan;
         System.out.println("В школе, где " + classes + " классов, нужно " + totalWhiteColorCan +

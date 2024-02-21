@@ -6,16 +6,20 @@ public class HW_1_3 {
         int salaryKristina = 76230;
         int increaseSalaryPercents = 10;
 
-        int newSalaryMasha = salaryMasha + salaryMasha * increaseSalaryPercents / 100;
-        int newSalaryDenis = salaryDenis + salaryDenis * increaseSalaryPercents / 100;
-        int newSalaryKristina = salaryKristina + salaryKristina * increaseSalaryPercents / 100;
+        double newSalaryMasha = salaryMasha + salaryMasha * increaseSalaryPercents / 100;
+        double  newSalaryDenis = salaryDenis + salaryDenis * increaseSalaryPercents / 100;
+        double newSalaryKristina = salaryKristina + salaryKristina * increaseSalaryPercents / 100;
+
+        double increaseMashaSalary = newSalaryMasha * 12 - salaryMasha * 12;
+        double increaseDenisSalary = newSalaryDenis * 12 - salaryDenis * 12;
+        double increaseKristinaSalary = newSalaryKristina * 12 - salaryKristina * 12;
 
         System.out.println("Маша теперь получает " + newSalaryMasha + " рублей. Годовой доход вырос на " +
-                (newSalaryMasha * 12 - salaryMasha * 12) + " рублей. ");
+                increaseMashaSalary + " рублей. ");
         System.out.println("Денис теперь получает " + newSalaryDenis + " рублей. Годовой доход вырос на " +
-                (newSalaryDenis * 12 - salaryDenis * 12) + " рублей. ");
+                increaseDenisSalary + " рублей. ");
         System.out.println("Кристина теперь получает " + newSalaryKristina + " рублей. Годовой доход вырос на " +
-                (newSalaryKristina * 12 - salaryKristina * 12) + " рублей. ");
+                increaseKristinaSalary + " рублей. ");
 
     }
 }

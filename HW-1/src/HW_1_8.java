@@ -12,8 +12,11 @@ public class HW_1_8 {
                     actualSum + " рублей. ");
         }
 
+        int totalYears = monthForSaveMoney / 12;
+        int totalMonths = monthForSaveMoney % 12;
+
         System.out.println("Пришлось копить " + monthForSaveMoney + " месяцев.");
-        System.out.println("Или " + monthForSaveMoney / 12 + " лет и " + monthForSaveMoney % 12 +
+        System.out.println("Или " + totalYears + " лет и " + totalMonths +
                 " месяцев.");
 
     }
