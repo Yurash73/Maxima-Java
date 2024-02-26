@@ -14,6 +14,7 @@ public class MotorTransport extends WheeledTransport {
         this.engineType = engineType;
     }
 
+    @Override
     public void service() {
         System.out.println("Обслужен двигатель типа " + engineType);
         super.service();

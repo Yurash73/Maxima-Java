@@ -14,6 +14,7 @@ public class Truck extends MotorTransport {
         this.capacity = capacity;
     }
 
+    @Override
     public void service () {
         System.out.println("Обслуживаем грузовик грузоподъемностью " + capacity + " тонн.");
         super.service();

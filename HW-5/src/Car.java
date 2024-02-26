@@ -24,6 +24,7 @@ public class Car extends MotorTransport {
         this.model = model;
     }
 
+    @Override
     public void service() {
         System.out.println("Обслуживаем автомобиль марки " + brand + " модель: " + model);
         super.service();
