@@ -6,14 +6,16 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)   {
 
-        FileWriter fileWriter = new FileWriter("source.txt", true);
+        try (FileWriter fileWriter = new FileWriter("source.txt", true)) {
         fileWriter.write("Вместе весело шагать по просторам! \n");
         fileWriter.write("По просторам!\n");
         fileWriter.write("И, конечно, припевать лучше хором!\n");
         fileWriter.write("Лучше хором, лучше хором!\n");
-        fileWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         copyFileContent("source.txt","dest.txt");
     }
