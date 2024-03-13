@@ -28,11 +28,7 @@ public class Main {
     public static double sumOfList(List<? extends Number> list) {
         double sum = 0;
         for (Number number : list) {
-            if (number instanceof Integer) {
-                sum += number.doubleValue();
-            } else {
-                sum += (Double) number;
-            }
+            sum += number.doubleValue();
         }
         return sum;
     }
