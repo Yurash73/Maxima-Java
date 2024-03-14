@@ -6,8 +6,6 @@ import java.util.List;
 public class BookShelf {
     private List<String> books = new ArrayList<>();
 
-    public BookShelf() {
-    }
 
     public void addBook (String bookname) {
         books.add(bookname);
@@ -24,6 +22,9 @@ public class BookShelf {
     }
 
     public void listBooks() {
-        System.out.println(books);
+        System.out.println("На полке находятся книги:");
+        for (String s:books) {
+            System.out.println(s);
+        }
     }
 }
