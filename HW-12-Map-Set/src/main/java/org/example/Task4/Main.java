@@ -9,7 +9,6 @@ public class Main {
         Set<Integer> fromOneToTen = new HashSet<>();
         Set<Integer> fromFiveToFifteen = new HashSet<>();
         Set<Integer> temp1 = new HashSet<>();
-        Set<Integer> temp2 = new HashSet<>();
 
         for (int i = 1; i <= 10; i++) {
             fromOneToTen.add(i);
@@ -36,9 +35,5 @@ public class Main {
         System.out.println("Разность множеств:");
         temp1.removeAll(fromFiveToFifteen);
         System.out.println(temp1);
-
-
-
-
     }
 }

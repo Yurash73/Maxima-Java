@@ -8,19 +8,19 @@ public class Main {
     public static void main(String[] args) {
 
         Set names = new HashSet<>();
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
 
-        while (true) {
-            System.out.println("Введите имя или stop для выхода:");
-            String line = scanner.nextLine();
-            if (line.toLowerCase().equals("stop")) {
-                break;
+            while (true) {
+                System.out.println("Введите имя или Annstop для выхода:");
+                String line = scanner.nextLine();
+                if (line.toLowerCase().equals("stop")) {
+                    break;
+                }
+                line = line.substring(0, 1).toUpperCase() + line.substring(1).toLowerCase();
+                names.add(line);
             }
-            line = line.substring(0, 1).toUpperCase() + line.substring(1).toLowerCase();
-            names.add(line);
-        }
 
-        System.out.println(names);
-        scanner.close();
+            System.out.println(names);
+        }
     }
 }
